@@ -1,0 +1,35 @@
+function muliplication
+Unit Test:
+
+Expect muliplication (5 * 10) to be number
+Expect muliplication (5 * 10) to be 50
+Expect muliplication ({Any input that's not a number} * 10) to be a error
+Expect muliplication (5 - or +  or / 10) to be a error if use any other math operation not muliplication
+
+
+
+
+function concatOdds ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1])
+Unit Test:
+
+
+Expect Array ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be a new array of odd numbers
+Expect Array ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be [-1, 1, 3, 9, 15] 
+Expect Array ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be an error if any evens ([2, 4])
+Expect Array ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be an if new array if backwards ([15, 9, 3, 1, -1])
+Expect Array ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be an error if not seperated with (" , ")
+
+
+
+
+
+Functional Test:
+Shopping cart checkout:
+
+When a user tries to checkout a prompt must show up asking to "Log In" or "Continue as Guest"
+When the user "Log in" they can continue to procced to check out their cart and pay
+When the user opt for "Continue as Guest" they must fill out some basic information to put a name on the order for the guest 
+When the guest is ready to pay for their cart they must enter manually there card information
+When guest hasn't input no form of payment a message would prompt asking for such imformation to proceed
+When guest succesfully submit payment a prompt should appear asking if they want to create an account to save their basic information
+When user or guest havent comfirmed payment of their cart a message would prompt reminding them they have items waiting to be purchase
